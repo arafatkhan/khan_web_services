@@ -13,6 +13,16 @@ Khan Web Services is a modern web application offering a variety of services to 
 - **Video & Animation**: Professional video production and animation services.
 - **Product Photography**: Showcase your products with high-quality photography.
 
+## PWA Features
+
+This project is now a Progressive Web App (PWA), enabling offline capabilities and better performance on mobile devices.
+
+### Steps to Enable PWA
+
+1. Ensure you have a valid HTTPS setup for your deployment.
+2. The service worker is automatically registered when you build and run the app.
+3. Add the app to your home screen for a native-like experience.
+
 ## Installation
 
 1. Clone the repository:
