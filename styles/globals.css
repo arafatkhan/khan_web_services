@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom font */
+@font-face {
+    font-family: 'Pattanakaran';
+    src: url('/fonts/Pattanakaran-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+    font-family: 'Pattanakaran', sans-serif;
+}
