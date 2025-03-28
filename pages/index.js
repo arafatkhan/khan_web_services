@@ -20,7 +20,7 @@ export default function Home() {
     ];
 
     return (
-        <div>
+        <div className="w-full max-w-full overflow-x-hidden">
             <div
                 className="h-screen bg-cover bg-center relative flex items-center justify-center text-white"
                 style={{ backgroundImage: "url('/images/banner.jpg')" }} // Use the banner image as a background

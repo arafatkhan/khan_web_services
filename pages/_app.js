@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function App({ Component, pageProps }) {
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <nav className="bg-gray-800 text-white p-4">
                 <div className="container mx-auto flex justify-between items-center">
                     {/* Logo and Tagline on the Left */}
