@@ -1,3 +1,4 @@
+/* Tailwind CSS Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +6,7 @@
 /* Add custom font */
 @font-face {
     font-family: 'Pattanakaran';
-    src: url('/fonts/Pattanakaran-Regular.ttf') format('truetype');
+    src: url('/fonts/Pattanakaran-Regular.ttf') format('truetype'); /* Ensure the font file path is correct */
     font-weight: normal;
     font-style: normal;
 }
@@ -15,13 +16,15 @@ body {
     font-family: 'Pattanakaran', sans-serif;
 }
 
+/* Prevent horizontal scrolling */
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Fix for white space on the right */
     box-sizing: border-box;
 }
 
+/* Ensure consistent box-sizing */
 *, *::before, *::after {
-    box-sizing: inherit; /* Ensure consistent box-sizing */
+    box-sizing: inherit;
 }
