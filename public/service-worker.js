@@ -1,5 +1,5 @@
 const CACHE_NAME = "kws-cache-v1";
-const urlsToCache = ["/", "/index.html", "/manifest.json"];
+const urlsToCache = ["/", "/index.html", "/manifest.json", "/icons/icon-192x192.png", "/icons/icon-512x512.png"];
 
 // Install the service worker
 self.addEventListener("install", (event) => {
@@ -14,7 +14,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+      return response || fetch(event.request).catch(() => caches.match("/index.html"));
     })
   );
 });

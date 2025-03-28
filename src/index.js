@@ -5,10 +5,10 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .register("/service-worker.js")
       .then((registration) => {
-        console.log("ServiceWorker registered: ", registration);
+        console.log("ServiceWorker registered with scope: ", registration.scope);
       })
-      .catch((registrationError) => {
-        console.log("ServiceWorker registration failed: ", registrationError);
+      .catch((error) => {
+        console.error("ServiceWorker registration failed: ", error);
       });
   });
 }
