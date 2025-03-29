@@ -5,7 +5,6 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev); // Toggle the menu state
-    console.log("Menu state:", !isOpen); // Debug log
   };
 
   return (
@@ -13,7 +12,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="text-xl font-bold">
+            <a href="/" className="text-xl font-bold hidden md:block">
+              {/* Hide this text on mobile */}
               Khan Web Services
             </a>
           </div>
@@ -45,9 +45,12 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <circle cx="12" cy="6" r="1.5" fill="currentColor" />
-                <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-                <circle cx="12" cy="18" r="1.5" fill="currentColor" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                />
               </svg>
             </button>
           </div>

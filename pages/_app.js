@@ -1,15 +1,25 @@
 import '../styles/globals.css';
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image component
 
 export default function App({ Component, pageProps }) {
     return (
         <div className="overflow-x-hidden">
             <nav className="bg-gray-800 text-white p-4">
                 <div className="container mx-auto flex justify-between items-center">
-                    {/* Logo and Tagline on the Left */}
-                    <div>
-                        <h1 className="text-2xl font-bold">Khan Web Services</h1>
-                        <p className="text-sm text-gray-300">Your trusted partner in web development</p>
+                    {/* Logo on the Left */}
+                    <div className="flex items-center">
+                        <Image
+                            src="/images/khan-web-service-logo.png" // Path to your logo
+                            alt="Khan Web Services Logo"
+                            width={50}
+                            height={50}
+                            className="mr-2"
+                        />
+                        <h1 className="text-2xl font-bold hidden md:block">
+                            {/* Hide this text on mobile */}
+                            Khan Web Services
+                        </h1>
                     </div>
 
                     {/* Menu on the Right */}
@@ -43,7 +53,6 @@ export default function App({ Component, pageProps }) {
                 </div>
             </nav>
             <main>
-                {/* Removed mt-4 to eliminate space */}
                 <Component {...pageProps} />
             </main>
         </div>
