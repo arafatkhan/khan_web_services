@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
                         </li>
                         <li>
                             <Link href="/about" className="hover:text-gray-400">
-                                About Us
+                                About
                             </Link>
                         </li>
                         <li>

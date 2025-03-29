@@ -6,7 +6,7 @@
 /* Add custom font */
 @font-face {
     font-family: 'Pattanakaran';
-    src: url('/fonts/Pattanakaran-Regular.ttf') format('truetype'); /* Ensure the font file path is correct */
+    src: url('/fonts/Pattanakaran-Regular.ttf') format('truetype'); /* Correct path */
     font-weight: normal;
     font-style: normal;
 }

@@ -28,6 +28,9 @@ export default function Navbar() {
               <a href="/services" className="hover:bg-gray-700 px-3 py-2 rounded-md">
                 Services
               </a>
+              <a href="/blog" className="hover:bg-gray-700 px-3 py-2 rounded-md">
+                Blog
+              </a>
               <a href="/contact" className="hover:bg-gray-700 px-3 py-2 rounded-md">
                 Contact
               </a>
@@ -67,6 +70,9 @@ export default function Navbar() {
             </a>
             <a href="/services" className="block hover:bg-gray-700 px-3 py-2 rounded-md">
               Services
+            </a>
+            <a href="/blog" className="block hover:bg-gray-700 px-3 py-2 rounded-md">
+              Blog
             </a>
             <a href="/contact" className="block hover:bg-gray-700 px-3 py-2 rounded-md">
               Contact
