@@ -5,6 +5,7 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev); // Toggle the menu state
+    console.log("Menu state:", !isOpen); // Debug log
   };
 
   return (
@@ -61,6 +62,7 @@ export default function Navbar() {
       </div>
       {isOpen && (
         <div className="md:hidden">
+          {console.log("Mobile menu is open")} {/* Debug log */}
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="block hover:bg-gray-700 px-3 py-2 rounded-md">
               Home

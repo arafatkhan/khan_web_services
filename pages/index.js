@@ -6,7 +6,7 @@ export default function Home() {
 
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
-    };
+    };``
 
     const services = [
         { title: "Graphics Design", description: "Creative and professional graphic design services to bring your ideas to life." },
